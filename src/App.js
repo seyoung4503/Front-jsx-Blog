@@ -2,22 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  // jsx 사용시 데이터 바인딩이 매우 쉽다. 
+  let posts = '고기 먹고 싶다';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className ="black-nav">
+        <div> 개발 blog </div>
+      </div>
+      <h4> {posts} </h4>
     </div>
   );
 }
